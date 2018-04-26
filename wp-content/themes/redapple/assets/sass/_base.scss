@@ -1,0 +1,142 @@
+//  Базовые стили
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: $body-bg;
+  color: $text-color;
+  font-weight: $font-weight;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+a {
+  //color: $link-color;
+  text-decoration: none;
+  color: #000;
+
+  &:hover,
+  &:active {
+    //color: $link-color--hover;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+section {
+  position: relative;
+}
+
+.page-container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1750px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header_in_box {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-top: 107px;
+  @include max-w($screen-1366) {
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 25%;
+  }
+  @include max-w($screen-1280) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 60px;
+  }
+  @include max-w($screen-1024) {
+    font-size: 22px;
+    line-height: 25px;
+    margin-top: 53px;
+    margin-bottom: 0;
+  }
+  @include max-w($screen-992) {
+    font-size: 18px;
+    margin-top: 58px;
+  }
+  @include max-w($screen-768) {
+    margin-top: 29px;
+    font-size: 16px;
+  }
+}
+
+.text_in_box {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  @include max-w($screen-1280) {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  @include max-w($screen-992) {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+// section services
+
+.class-block {
+  display: block;
+
+  &--transform {
+    transform: translate(10px, 10px);
+  }
+
+  &--ohidden {
+    overflow: hidden;
+  }
+}
+
+
+//////////////////////////////

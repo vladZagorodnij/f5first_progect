@@ -1,0 +1,84 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-black-point {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -77px;
+  width: 14px;
+  height: 19px;
+}
+.icon-check {
+  background-image: url(../images/spritesheet.png);
+  background-position: -26px -52px;
+  width: 26px;
+  height: 20px;
+}
+.icon-close {
+  background-image: url(../images/spritesheet.png);
+  background-position: -79px 0px;
+  width: 20px;
+  height: 20px;
+}
+.icon-file {
+  background-image: url(../images/spritesheet.png);
+  background-position: -54px -52px;
+  width: 23px;
+  height: 20px;
+}
+.icon-mail {
+  background-image: url(../images/spritesheet.png);
+  background-position: -52px -35px;
+  width: 19px;
+  height: 14px;
+}
+.icon-phone {
+  background-image: url(../images/spritesheet.png);
+  background-position: -79px -22px;
+  width: 19px;
+  height: 19px;
+}
+.icon-plus {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -52px;
+  width: 23px;
+  height: 23px;
+}
+.icon-red-point {
+  background-image: url(../images/spritesheet.png);
+  background-position: -52px 0px;
+  width: 25px;
+  height: 33px;
+}
+.icon-search {
+  background-image: url(../images/spritesheet.png);
+  background-position: -16px -77px;
+  width: 16px;
+  height: 16px;
+}
+.icon-vec {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-x {
+  background-image: url(../images/spritesheet.png);
+  background-position: -79px -43px;
+  width: 19px;
+  height: 19px;
+}

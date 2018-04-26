@@ -1,0 +1,247 @@
+.single-blog {
+  background-color: #fff;
+  padding-top: 126px;
+}
+
+.single-blog-container {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 78px;
+  .sidebar-area {
+    padding-left: 0;
+    ul {
+      margin-top: 0;
+    }
+    @include max-w($screen-1024) {
+      order: 1;
+      max-width: 1024px;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  @include max-w($screen-1024) {
+    flex-wrap: wrap;
+  }
+  @include max-w($screen-768) {
+    padding-top: 0;
+  }
+}
+
+.single-blog-area {
+  max-width: 685px;
+  width: 100%;
+  @include max-w($screen-1024) {
+    order: 2;
+    margin: 0 auto;
+  }
+  @include max-w($screen-1024) {
+    text-align: center;
+  }
+}
+
+.single-blog-header {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.single-blog-item {
+  .blog-date {
+    margin-bottom: 38px;
+  }
+}
+
+.single-blog-featured-image {
+  padding-bottom: 30px;
+}
+
+.single-blog-content {
+  ul{
+    margin-left: 35px;
+    display: inline-block;
+    li {
+      list-style-image:url("../../assets/images/list.png");
+    }
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 48px 40px 55px 40px;
+  box-shadow: 1px 3px 43px rgba(95, 95, 176, 0.16);
+  position: relative;
+  &:before {
+    content: url(../../assets/images/blockquote-top.png);
+    display: block;
+    position: absolute;
+    top: -22px;
+    left: 19px;
+  }
+  &:after {
+    content: url(../../assets/images/blockquote-bottom.png);
+    display: block;
+    position: absolute;
+    bottom: -27px;
+    right: 13px;
+  }
+}
+
+.blockquote-text {
+  margin-bottom: 33px;
+}
+
+.single-blog-featured-image {
+  img {
+    width: 100%;
+  }
+}
+
+.blockquote-show {
+  display: block;
+}
+
+.single-blog-video {
+  margin-top: 40px;
+  margin-bottom: 103px;
+  iframe {
+    width: 100%;
+  }
+}
+
+.single-blog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+
+.previous-button-container {
+  text-align: center;
+  max-width: 168px;
+  height: 50px;
+  position: relative;
+  padding-left: 12px;
+  @include max-w($screen-480) {
+    max-width: 120px;
+  }
+  a {
+    width: 168px;
+    height: 50px;
+    display: block;
+    position: relative;
+    @include max-w($screen-480) {
+      max-width: 120px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 163px;
+      height: 45px;
+      background-color: #c62900;
+      margin: 0 auto;
+      z-index: 1;
+      position: absolute;
+      transition: all 500ms ease-in-out;
+      @include max-w($screen-480) {
+        max-width: 115px;
+      }
+    }
+    &:after {
+      content: 'Previous';
+      width: 168px;
+      height: 50px;
+      padding-top: 13px;
+      background-color: #fff;
+      border: 1px solid #ff3500;
+      display: block;
+      margin: 0 auto;
+      z-index: 2;
+      transform: translate(-12px, -10px);
+      position: relative;
+      @include max-w($screen-480) {
+        max-width: 120px;
+      }
+    }
+    &:hover {
+      &:before {
+        transform: translate(-4px, -3px);
+      }
+    }
+  }
+}
+
+.next-button-container {
+  text-align: center;
+  max-width: 168px;
+  height: 50px;
+  position: relative;
+  @include max-w($screen-480) {
+    max-width: 120px;
+  }
+  a {
+    width: 168px;
+    height: 50px;
+    display: block;
+    position: relative;
+    @include max-w($screen-480) {
+      max-width: 120px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 163px;
+      height: 45px;
+      background-color: #c62900;
+      margin: 0 auto;
+      z-index: 1;
+      color: #c62900;
+      position: absolute;
+      transition: all 500ms ease-in-out;
+      @include max-w($screen-480) {
+        max-width: 115px;
+      }
+    }
+    &:after {
+      content: 'Next';
+      width: 168px;
+      height: 50px;
+      padding-top: 13px;
+      background-color: #fff;
+      border: 1px solid #ff3500;
+      display: block;
+      margin: 0 auto;
+      z-index: 2;
+      transform: translate(-12px, -10px);
+      position: relative;
+      @include max-w($screen-480) {
+        max-width: 120px;
+      }
+    }
+    &:hover {
+      &:before {
+        transform: translate(-4px, -3px);
+      }
+    }
+  }
+}
+
+//share buttons
+
+
+.f5-social {
+  margin-top: 61px;
+}
+
+.f5-link {
+  margin-right: 20px;
+}
+
+

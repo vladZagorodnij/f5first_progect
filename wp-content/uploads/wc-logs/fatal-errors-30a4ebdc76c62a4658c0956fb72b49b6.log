@@ -1,0 +1,60 @@
+2018-04-26T09:24:04+00:00 CRITICAL Uncaught Error: Call to undefined function exam_post_thumbnail() in /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/template-parts/content-page.php:3
+Stack trace:
+#0 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(690): require()
+#1 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(647): load_template('/home/vlad/it/G...', false)
+#2 /home/vlad/it/Geekhub/F5/redapple/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/page.php(7): get_template_part('template-parts/...', 'page')
+#4 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template-loader.php(74): include('/home/vlad/it/G...')
+#5 /home/vlad/it/Geekhub/F5/redapple/wp-blog-header.php(19): require_once('/home/vlad/it/G...')
+#6 /home/vlad/it/Geekhub/F5/redapple/index.php(17): require('/home/vlad/it/G...')
+#7 {main}
+  thrown
+
+2018-04-26T09:27:08+00:00 CRITICAL Uncaught Error: Call to undefined function exam_post_thumbnail() in /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/template-parts/content-page.php:3
+Stack trace:
+#0 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(690): require()
+#1 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(647): load_template('/home/vlad/it/G...', false)
+#2 /home/vlad/it/Geekhub/F5/redapple/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/page.php(7): get_template_part('template-parts/...', 'page')
+#4 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template-loader.php(74): include('/home/vlad/it/G...')
+#5 /home/vlad/it/Geekhub/F5/redapple/wp-blog-header.php(19): require_once('/home/vlad/it/G...')
+#6 /home/vlad/it/Geekhub/F5/redapple/index.php(17): require('/home/vlad/it/G...')
+#7 {main}
+  thrown
+
+2018-04-26T09:27:49+00:00 CRITICAL Uncaught Error: Call to undefined function exam_post_thumbnail() in /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/template-parts/content-page.php:3
+Stack trace:
+#0 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(690): require()
+#1 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(647): load_template('/home/vlad/it/G...', false)
+#2 /home/vlad/it/Geekhub/F5/redapple/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/page.php(7): get_template_part('template-parts/...', 'page')
+#4 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template-loader.php(74): include('/home/vlad/it/G...')
+#5 /home/vlad/it/Geekhub/F5/redapple/wp-blog-header.php(19): require_once('/home/vlad/it/G...')
+#6 /home/vlad/it/Geekhub/F5/redapple/index.php(17): require('/home/vlad/it/G...')
+#7 {main}
+  thrown
+
+2018-04-26T09:47:00+00:00 CRITICAL Uncaught Error: Call to undefined function exam_post_thumbnail() in /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/template-parts/content-page.php:3
+Stack trace:
+#0 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(690): require()
+#1 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(647): load_template('/home/vlad/it/G...', false)
+#2 /home/vlad/it/Geekhub/F5/redapple/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/page.php(7): get_template_part('template-parts/...', 'page')
+#4 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template-loader.php(74): include('/home/vlad/it/G...')
+#5 /home/vlad/it/Geekhub/F5/redapple/wp-blog-header.php(19): require_once('/home/vlad/it/G...')
+#6 /home/vlad/it/Geekhub/F5/redapple/index.php(17): require('/home/vlad/it/G...')
+#7 {main}
+  thrown
+
+2018-04-26T09:47:00+00:00 CRITICAL Uncaught Error: Call to undefined function exam_post_thumbnail() in /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/template-parts/content-page.php:3
+Stack trace:
+#0 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(690): require()
+#1 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template.php(647): load_template('/home/vlad/it/G...', false)
+#2 /home/vlad/it/Geekhub/F5/redapple/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /home/vlad/it/Geekhub/F5/redapple/wp-content/themes/redapple/page.php(7): get_template_part('template-parts/...', 'page')
+#4 /home/vlad/it/Geekhub/F5/redapple/wp-includes/template-loader.php(74): include('/home/vlad/it/G...')
+#5 /home/vlad/it/Geekhub/F5/redapple/wp-blog-header.php(19): require_once('/home/vlad/it/G...')
+#6 /home/vlad/it/Geekhub/F5/redapple/index.php(17): require('/home/vlad/it/G...')
+#7 {main}
+  thrown
+

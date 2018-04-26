@@ -1,0 +1,70 @@
+// Кнопки
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  outline: 0 none;
+  border: 0 none;
+  border-radius: 0;
+  padding: 8px 25px;
+  background-color: #000;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+// hover menu
+
+.menu-item{
+  a:after, a:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#ff0000, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+    @include max-w($screen-1024) {
+      border: none;
+    }
+  }
+}
+
+.menu-item{
+  a:hover:after {
+    backface-visibility: hidden;
+    border-color: #ff0000;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+    @include max-w($screen-1024) {
+      border: none;
+    }
+  }
+}
+
+.menu-item{
+  a:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+  }
+}
+
+//hover contact us
+
+.beauty-button:hover {
+  &:after {
+    bottom: -2px;
+    right: -2px;
+    @include max-w($screen-992) {
+      bottom: 2px;
+      right: 33px;
+    }
+    @include max-w($screen-768) {
+      bottom: 2px;
+      right: 4px;
+    }
+  }
+}

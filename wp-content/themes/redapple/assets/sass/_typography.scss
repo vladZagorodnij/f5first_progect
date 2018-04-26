@@ -1,0 +1,569 @@
+//  Подключения шрифтов
+
+// font-family: 'Roboto';
+@font-face {
+  font-family: 'Roboto';
+  font-weight: normal;
+  src:  local('Roboto'), local('Roboto-Regular');
+  src:  url('../fonts/Roboto-Regular.eot');
+  src:  url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+}
+
+// font-family: 'Roboto';
+// font-weight: 700;
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src:  local('Roboto'), local('Roboto-Bold');
+  src:  url('../fonts/Roboto-Bold.eot');
+  src:  url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+}
+
+
+// font-family: 'Hesterica';
+@font-face {
+  font-family: 'Hesterica';
+  font-weight: normal;
+  src:  local('Hesterica'), local('Hesterica-Regular');
+  src:  url('../fonts/hesterica/Hesterica.eot');
+  src:  url('../fonts/hesterica/Hesterica.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/hesterica/Hesterica.woff') format('woff'),
+  url('../fonts/hesterica/Hesterica.ttf') format('truetype'),
+  url('../fonts/hesterica/Hesterica.svg#Hesterica-Regular') format('svg');
+}
+
+// font-family: 'Hesterica';
+// font-weight: 700;
+
+@font-face {
+  font-family: 'Hesterica';
+  font-weight: 700;
+  src:  local('Hesterica'), local('Hesterica-Bold');
+  src:  url('../fonts/hesterica/Hesterica.eot');
+  src:  url('../fonts/hesterica/Hesterica.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/hesterica/Hesterica.woff') format('woff'),
+  url('../fonts/hesterica/Hesterica.ttf') format('truetype'),
+  url('../fonts/hesterica/Hesterica.svg#Hesterica-Regular') format('svg');
+}
+
+// font-family: 'Muli';
+@font-face {
+  font-family: 'Muli';
+  font-weight: normal;
+  src:  local('Muli'), local('Muli-Regular');
+  src:  url('../fonts/Muli/Muli-Regular.eot');
+  src:  url('../fonts/Muli/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Muli/Muli-Regular.woff') format('woff'),
+  url('../fonts/Muli/Muli-Regular.ttf') format('truetype'),
+  url('../fonts/Muli/Muli-Regular.svg#Hesterica-Regular') format('svg');
+}
+
+// font-family: 'Muli';
+// font-weight: 700;
+
+@font-face {
+  font-family: 'Muli';
+  font-weight: 700;
+  src:  local('Muli'), local('Muli-Bold');
+  src:  url('../fonts/Muli/Muli-Regular.eot');
+  src:  url('../fonts/Muli/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Muli/Muli-Regular.woff') format('woff'),
+  url('../fonts/Muli/Muli-Regular.ttf') format('truetype'),
+  url('../fonts/Muli/Muli-Regular.svg#Hesterica-Regular') format('svg');
+}
+
+// font-family: 'Ovo';
+@font-face {
+  font-family: 'Ovo';
+  font-weight: normal;
+  src:  local('Ovo'), local('Ovo-Regular');
+  src:  url('../fonts/Ovo/Ovo.eot');
+  src:  url('../fonts/Ovo/Ovo.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ovo/Ovo.woff') format('woff'),
+  url('../fonts/Ovo/Ovo.ttf') format('truetype'),
+  url('../fonts/Ovo/Ovo.svg#Hesterica-Regular') format('svg');
+}
+
+// font-family: 'Ovo';
+// font-weight: 700;
+
+@font-face {
+  font-family: 'Ovo';
+  font-weight: 700;
+  src:  local('Ovo'), local('Ovo-Bold');
+  src:  url('../fonts/Ovo/Ovo.eot');
+  src:  url('../fonts/Ovo/Ovo.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ovo/Ovo.woff') format('woff'),
+  url('../fonts/Ovo/Ovo.ttf') format('truetype'),
+  url('../fonts/Ovo/Ovo.svg#Hesterica-Regular') format('svg');
+}
+
+
+// Заголовки
+
+h1, h2 {
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 150px;
+  @include max-w($screen-1680) {
+    font-size: 130px;
+  }
+  @include max-w($screen-1600) {
+    margin-bottom: 80px;
+  }
+  @include max-w($screen-1440) {
+    font-size: 110px;
+  }
+  @include max-w($screen-1280) {
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+  @include max-w($screen-1024) {
+    font-size: 90px;
+    margin-bottom: 40px;
+  }
+  @include max-w($screen-768) {
+    font-size: 65px;
+  }
+}
+
+h3 {
+	font-size: 36px;
+  margin-bottom: 12px;
+  @include max-w($screen-1024) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h3, h4 {
+  font-family: Ovo, serif;
+}
+
+p {
+  font-family: Muli, sans-serif;
+}
+
+.news-date {
+  font-size: 12px;
+}
+
+
+// PAGE gallery
+
+.gallery-category-button {
+  font-size: 14px;
+}
+
+.gallery-header {
+  h2 {
+    font-size: 100px;
+    @include max-w($screen-480) {
+      font-size: 70px;
+    }
+  }
+}
+
+.gallery-load-more {
+  a {
+    font-size: 18px;
+  }
+}
+
+//PAGE our team
+
+.team-header {
+  h2 {
+    font-size: 100px;
+    @include max-w($screen-1024) {
+      font-size: 90px;
+    }
+    @include max-w($screen-768) {
+      font-size: 65px;
+    }
+  }
+}
+
+.team-header-text {
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+}
+
+.team-position {
+  font-size: 16px;
+}
+
+.team-text-wrap {
+  h4 {
+    font-family: $font-family;
+    font-size: 36px;
+    color: #121216;
+  }
+  p {
+    color: #ff3802;
+  }
+}
+
+.team-popup {
+  h4 {
+    font-size: 36px;
+    font-family: $font-family;
+  }
+  .team-popup-position {
+    color: #ff3802;
+    font-size: 16px;
+  }
+  .team-popup-text {
+    color: #2a2a33;
+    font-size: 16px;
+    font-family: Muli, sans-serif;
+    line-height: 30px;
+    @include max-w($screen-1024) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+.isotop-button, .btn-text {
+  font-size: 18px;
+  font-family: Ovo, serif;
+}
+
+// contact
+
+.contact-header {
+  h2 {
+    font-size: 100px;
+    @include max-w($screen-1024) {
+      font-size: 90px;
+    }
+    @include max-w($screen-768) {
+      font-size: 65px;
+    }
+    @include max-w($screen-480) {
+      font-size: 50px;
+    }
+  }
+}
+
+input[type=email], input[type=tel], input[type=text], select, textarea {
+  color: #fff;
+  font-size: 16px;
+}
+
+.submit-button {
+  input {
+    font-size: 18px;
+    font-family: Ovo, serif;
+  }
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-family: Muli, sans-serif;
+  color: #fff;
+  &:-ms-input-placeholder {
+    font-family: Muli, sans-serif;
+  }
+  &::-ms-input-placeholder {
+    font-family: Muli, sans-serif;
+  }
+  &::-moz-placeholder {
+    color: #fff;
+  }
+  &:-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.select-item, .ui-selectmenu-button, .ui-menu-item {
+  font-size: 16px;
+  font-family: Muli, sans-serif;
+}
+
+
+textarea::placeholder {
+  font-size: 16px;
+  font-family: Muli, sans-serif;
+  color: #fff;
+  &:-ms-input-placeholder {
+    font-family: Muli, sans-serif;
+  }
+  &::-moz-placeholder {
+    color: #fff;
+  }
+  &:-moz-placeholder {
+    color: #fff;
+  }
+  &::-ms-input-placeholder {
+    font-family: Muli, sans-serif;
+  }
+}
+
+.header-in-contact {
+  color: #fff;
+  font-size: 36px;
+  font-family: Ovo, serif;
+  line-height: 36px;
+  @include max-w($screen-768) {
+    font-size: 24px;
+  }
+}
+
+table {
+  line-height: 36px;
+  font-size: 16px;
+  font-family: Muli, sans-serif;
+  color: #121216;
+  @include max-w($screen-1024) {
+    font-size: 15px;
+  }
+  @include max-w($screen-480) {
+    font-size: 13px;
+  }
+}
+
+.contact-text {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+option {
+  color: #121216;
+  background: transparent;
+}
+
+//PAGE CAREERS
+
+.career-main-header {
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  letter-spacing: -1px;
+  @include max-w($screen-1680) {
+    font-size: 85px;
+  }
+  @include max-w($screen-1440) {
+    font-size: 75px;
+  }
+  @include max-w($screen-1280) {
+    font-size: 62px;
+  }
+  @include max-w($screen-1024) {
+    font-size: 43px;
+  }
+  @include max-w($screen-768) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.assistant-header {
+  color: #2a2a33;
+  font-size: 36px;
+  line-height: 30px;
+  font-family: $font-family;
+}
+
+.assistant-text, .vacancy-text {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Muli, sans-serif;
+  color: #2a2a33;
+  @include max-w($screen-1366) {
+    line-height: 26px;
+  }
+}
+
+.vacancy-item-header {
+  font-family: Ovo, serif;
+  color: #2a2a33;
+  font-size: 24px;
+}
+
+.vacancy-show-more {
+  font-size: 18px;
+  text-decoration: underline;
+  font-family: Ovo, serif;
+  color: #2a2a33;
+}
+
+.vacancy-button {
+  font-size: 18px;
+  font-family: Ovo, serif;
+  color: #2a2a33;
+}
+
+.form-header {
+  color: #fff;
+  font-size: 100px;
+  @include max-w($screen-1280) {
+    font-size: 80px;
+  }
+  @include max-w($screen-768) {
+    font-size: 60px;
+  }
+  @include max-w($screen-480) {
+    font-size: 40px;
+  }
+}
+
+//blog
+
+.widget-title, .blog-item-header {
+  font-size: 24px;
+  font-family: Ovo, serif;
+  color: #2a2a33;
+}
+
+.blog-date {
+  font-size: 14px;
+  font-family: Muli, sans-serif;
+  font-style: italic;
+  line-height: 24px;
+  color: #999;
+}
+
+.entry-content {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Muli, sans-serif;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.search-field {
+  color: #999;
+  font-family: Muli, sans-serif !important;
+  font-size: 16px;
+  &::-webkit-input-placeholder {
+    color: #999;
+    font-family: Muli, sans-serif !important;
+    font-size: 16px;
+  }
+  &::-moz-placeholder {
+    color: #999;
+    font-family: Muli, sans-serif !important;
+    font-size: 16px;
+  }
+  &:-ms-input-placeholder {
+    color: #999;
+    font-family: Muli, sans-serif !important;
+    font-size: 16px;
+  }
+  &:-moz-placeholder {
+    color: #999;
+    font-family: Muli, sans-serif !important;
+    font-size: 16px;
+  }
+}
+
+.widget {
+  a {
+    font-size: 16px;
+    font-family: Muli, sans-serif;
+  }
+}
+
+// single blog
+
+.single-blog-area {
+  color: #2a2a33;
+  font-family: Muli, sans-serif;
+}
+
+.single-blog-content {
+  font-size: 16px;
+  line-height: 36px;
+  p {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  h4 {
+    font-size: 20px;
+    font-family: Ovo, serif;
+  }
+  a {
+    color: #ff3500;
+  }
+}
+
+.blockquote {
+  font-size: 24px;
+  font-family: Ovo, serif;
+  font-style: italic;
+  color: #333;
+  .blockquote-text {
+    font-family: Ovo, serif;
+  }
+}
+
+.blockquote_author {
+  color: #999;
+  font-size: 16px;
+  font-family: Muli, sans-serif;
+  text-align: right;
+}
+
+.single-blog-header {
+  font-family: Ovo, serif;
+  font-size: 24px;
+}
+
+
+.single-blog-button-container {
+  a {
+    font-size: 18px;
+    font-family: Ovo, serif;
+    color: #c62900;
+  }
+}
+
+.fa {
+  font-size: 33px;
+  color: #ccc;
+  transition: all 500ms ease-in-out;
+  &:hover {
+    color: #121216;
+  }
+}
+
+
+.previous-button-container, .next-button-container {
+  a {
+    font-size: 18px;
+    font-family: Ovo, serif;
+    color: #c62900;
+    &:after {
+      font-size: 18px;
+      font-family: Ovo, serif;
+      color: #c62900;
+    }
+  }
+}

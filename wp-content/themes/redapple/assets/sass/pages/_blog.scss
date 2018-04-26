@@ -1,0 +1,245 @@
+.blog {
+  background-color: #fff;
+  padding-bottom: 110px;
+}
+
+.blog-container {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  &__items {
+    display: flex;
+    @include max-w($screen-1024) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.blog-header {
+  margin-top: 127px;
+  margin-bottom: 69px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.blogs-area {
+  max-width: 750px;
+  width: 100%;
+  @include max-w($screen-1024) {
+    order: 2;
+    margin: 0 auto;
+  }
+}
+
+.blog-items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  @include max-w($screen-1024) {
+    max-width: 720px;
+  }
+}
+
+.blog-item {
+  max-width: 360px;
+  width: 50%;
+  min-height: 450px;
+  text-align: center;
+  margin-bottom: 34px;
+  cursor: pointer;
+  &:nth-child(odd) {
+    margin-right: 30px;
+    @include max-w($screen-1280) {
+      margin-right: 0;
+      padding-right: 15px;
+    }
+    @include max-w($screen-768) {
+      padding-right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      float: none;
+    }
+  }
+  &:nth-child(even) {
+    @include max-w($screen-1280) {
+      padding-left: 15px;
+    }
+    @include max-w($screen-768) {
+      padding-left: 0;
+      float: none;
+    }
+  }
+  &:hover {
+    h4 {
+      color: #ff0000
+    }
+  }
+  //@include max-w($screen-1280) {
+  //  max-width: 306px;
+  //}
+  @include max-w($screen-1024) {
+    max-width: 360px;
+  }
+  @include max-w($screen-768) {
+    max-width: 667px;
+    width: 100%;
+  }
+  @include max-w($screen-480) {
+    margin-bottom: 15px;
+    min-height: 400px;
+  }
+}
+
+.blog-item-shadow {
+  box-shadow: 0 -3px 21px rgba(95, 95, 176, 0.07);
+  padding-bottom: 30px;
+  @include max-w($screen-480) {
+    padding-bottom: 10px;
+  }
+}
+
+.blog-item-header {
+  margin-top: 19px;
+  margin-bottom: 20px;
+  transition: all 500ms ease-in-out;
+  &:after {
+    content: '';
+    display: block;
+    width: 42px;
+    border-bottom: 2px solid #ff0000;
+    margin: 19px auto 0 auto;
+  }
+}
+
+.blog-item-text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.blog-date {
+  padding-top: 30px;
+}
+
+
+.entry-content {
+  p {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+//sidebar
+
+.sidebar-area {
+  max-width: 360px;
+  width: 100%;
+  margin-left: 30px;
+  text-align: center;
+  //@include max-w($screen-1280) {
+  //  padding-left: 0;
+  //  width: auto;
+  //}
+  @include max-w($screen-1024) {
+    order: 1;
+    max-width: 1024px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.widget-title {
+  cursor: pointer;
+}
+
+.widget_search {
+  box-shadow: 0 -3px 21px rgba(95, 95, 176, 0.07);
+  margin-bottom: 30px;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-field {
+  width: 310px !important;
+  height: 50px !important;
+  margin: 0 !important;
+  border: none !important;
+  @include max-w($screen-1024) {
+    max-width: 1024px !important;
+    width: 100% !important;
+    height: 50px !important;
+  }
+}
+
+.search-submit {
+  width: 50px;
+  height: 50px;
+  background-color: #2a2a33;
+  border: none;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  &:hover {
+    background-color: #f00
+  }
+}
+
+.widget_categories {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 -3px 21px rgba(95, 95, 176, 0.07);
+  li {
+    padding-bottom: 20px;
+  }
+}
+
+.cat-item {
+  a {
+    transition: all 500ms ease-in-out;
+    &:hover {
+      color: #ff0000;
+    }
+  }
+}
+
+.widget-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  &:after {
+    content: '';
+    display: block;
+    width: 42px;
+    border-bottom: 2px solid #ff0000;
+    margin: 14px auto 0 auto;
+  }
+}
+
+.widget_recent_entries {
+  padding-top: 30px;
+  box-shadow: 0 -3px 21px rgba(95, 95, 176, 0.07);
+  li {
+    padding-bottom: 20px;
+    a {
+      transition: all 500ms ease-in-out;
+      &:hover {
+        color: #ff0000;
+      }
+    }
+  }
+}
+
+  .blog-ajax-button {
+    margin-top: 31px;
+  }
+
+#blog_loadmore {
+  padding-top: 10px;
+}
